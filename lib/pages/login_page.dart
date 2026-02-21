@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_23/comp/my_drawer.dart';
 import 'package:portfolio_23/pages/settings_page.dart';
 import 'package:provider/provider.dart';
 import 'package:portfolio_23/themes/theme_provider.dart';
