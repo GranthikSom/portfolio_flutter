@@ -9,6 +9,7 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -41,31 +42,31 @@ class SettingsPage extends StatelessWidget {
             ),
 
             Container(
-              width: 150,
-              height: 100,
+              width: 900,
+              height: 600,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Theme.of(context).colorScheme.primary,
+                borderRadius: BorderRadius.circular(20),
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.8),
               ),
               child: const Center(
                 child: Text(
-                  "Box 2",
+                  "1st ",
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ),
             ),
             const SizedBox(height: 20),
             Container(
-              width: 150,
-              height: 100,
+              width: 900,
+              height: 600,
 
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Theme.of(context).colorScheme.primary,
+                borderRadius: BorderRadius.circular(20),
+                color: Theme.of(context).colorScheme.primary.withOpacity(0.8),
               ),
               child: const Center(
                 child: Text(
-                  "Box 2",
+                  " 2nd ",
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ),

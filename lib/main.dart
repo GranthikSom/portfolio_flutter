@@ -6,6 +6,7 @@ import 'package:portfolio_23/themes/theme_provider.dart';
 
 import 'pages/login_page.dart';
 import 'package:provider/provider.dart';
+import 'dart:ui';
 
 void main() {
   runApp(
@@ -23,8 +24,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
       theme: Provider.of<ThemeProvider>(context).themeData,
+      home: Stack(
+        fit: StackFit.expand,
+        children: [
+          // Background Image
+          Image(image: AssetImage("assets/bg.jpg"), fit: BoxFit.cover),
+
+          // Blur Layer
+          BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+            child: Container(
+              color: Theme.of(
+                context,
+              ).colorScheme.surface.withOpacity(0.05), // dark overlay
+            ),
+          ),
+          const LoginPage(),
+        ],
+      ),
     );
   }
 }
