@@ -22,7 +22,6 @@ A modern, interactive portfolio website built with **Flutter Web**, featuring:
 - **Responsive Design**: Works on mobile, tablet, and desktop web.
 
 ---
-
 ## 🛠 Tech Stack
 
 - Flutter Web

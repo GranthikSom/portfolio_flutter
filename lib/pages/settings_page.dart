@@ -10,6 +10,10 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.transparent,
+      appBar: AppBar(
+        title: const Text(''),
+        backgroundColor: Colors.transparent,
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -18,7 +22,7 @@ class SettingsPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
               margin: EdgeInsets.all(20),
-              padding: EdgeInsets.all(0),
+              padding: EdgeInsets.all(10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [

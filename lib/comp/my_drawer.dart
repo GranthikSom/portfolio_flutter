@@ -8,36 +8,75 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Theme.of(context).colorScheme.secondary,
+      backgroundColor: Theme.of(context).colorScheme.primary.withOpacity(0.2),
       child: Column(
         children: [
           //logo
-          DrawerHeader(
-            child: Center(
-              child: Icon(
-                Icons.music_note,
-                size: 50,
-                color: Theme.of(context).colorScheme.inversePrimary,
-              ),
-            ),
-          ),
 
           //home title
           Padding(
             padding: const EdgeInsets.only(left: 25, top: 25),
             child: ListTile(
               title: const Text('H O M E'),
-              leading: const Icon(Icons.home),
               onTap: () => Navigator.pop(context),
             ),
           ),
+          const SizedBox(height: 20),
 
           //settings
           Padding(
             padding: const EdgeInsets.only(left: 25, top: 0),
             child: ListTile(
-              title: const Text('S E T T I N G S'),
-              leading: const Icon(Icons.settings),
+              title: const Text('A B O U T'),
+
+              onTap: () {
+                Navigator.pop(context);
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                );
+              },
+            ),
+          ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 25, top: 0),
+            child: ListTile(
+              title: const Text('P R O J E C T S'),
+
+              onTap: () {
+                Navigator.pop(context);
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                );
+              },
+            ),
+          ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 25, top: 0),
+            child: ListTile(
+              title: const Text('C O N T A C T'),
+
+              onTap: () {
+                Navigator.pop(context);
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                );
+              },
+            ),
+          ),
+          const SizedBox(height: 20),
+          Padding(
+            padding: const EdgeInsets.only(left: 25, top: 0),
+            child: ListTile(
+              title: const Text('M O R E'),
+
               onTap: () {
                 Navigator.pop(context);
 
