@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../themes/theme_provider.dart';
 
-class SettingsPage extends StatelessWidget {
-  const SettingsPage({super.key});
+class AboutPage extends StatelessWidget {
+  const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:portfolio_23/themes/theme_provider.dart';
 
-import 'pages/login_page.dart';
+import 'pages/main_page.dart';
 import 'package:provider/provider.dart';
 import 'dart:ui';
 
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
               ).colorScheme.surface.withOpacity(0.05), // dark overlay
             ),
           ),
-          const LoginPage(),
+          const MainPage(),
         ],
       ),
     );

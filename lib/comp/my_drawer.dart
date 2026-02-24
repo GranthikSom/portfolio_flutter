@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:portfolio_23/pages/settings_page.dart';
+import 'package:portfolio_23/pages/about_page.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -34,7 +34,7 @@ class MyDrawer extends StatelessWidget {
 
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                  MaterialPageRoute(builder: (context) => AboutPage()),
                 );
               },
             ),
@@ -50,7 +50,7 @@ class MyDrawer extends StatelessWidget {
 
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                  MaterialPageRoute(builder: (context) => AboutPage()),
                 );
               },
             ),
@@ -66,7 +66,7 @@ class MyDrawer extends StatelessWidget {
 
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                  MaterialPageRoute(builder: (context) => AboutPage()),
                 );
               },
             ),
@@ -82,7 +82,7 @@ class MyDrawer extends StatelessWidget {
 
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                  MaterialPageRoute(builder: (context) => AboutPage()),
                 );
               },
             ),
