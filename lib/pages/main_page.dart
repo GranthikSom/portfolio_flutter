@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:portfolio_23/comp/about_text.dart';
 
-//import 'package:portfolio_23/comp/my_drawer.dart';
+import 'package:portfolio_23/comp/my_drawer.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class MainPage extends StatelessWidget {
@@ -15,8 +15,8 @@ class MainPage extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Colors.transparent,
-      //drawer: MyDrawer(),
-      //appBar: AppBar(backgroundColor: Colors.transparent),
+      drawer: MyDrawer(),
+      appBar: AppBar(backgroundColor: Colors.transparent),
       body: ScrollTransformView(
         children: [
           // Parallax effect
@@ -24,7 +24,7 @@ class MainPage extends StatelessWidget {
             builder: (scrollOffset) {
               final offScreenpercentage = min(
                 scrollOffset / screenSize.height,
-                5.0,
+                2.0,
               );
               return Image.asset(
                 'assets/about.png',
@@ -52,7 +52,29 @@ class MainPage extends StatelessWidget {
                     context,
                   ).colorScheme.secondary.withOpacity(0.1),
                 ),
-                child: const Center(child: AboutText()),
+
+                child: Row(
+                  children: const [
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.only(left: 100),
+                        child: Image(
+                          image: AssetImage('assets/1.JPG'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 1),
+                    Expanded(
+                      child: Align(
+                        child: Padding(
+                          padding: EdgeInsets.only(right: 100),
+                          child: AboutText(),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               );
             },
           ),
