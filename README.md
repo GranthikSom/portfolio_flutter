@@ -31,5 +31,5 @@ A modern, interactive portfolio website built with **Flutter Web**, featuring:
 
 
 //to add images you have to make your own assets folder
-//
+//only contain the web build 
 
